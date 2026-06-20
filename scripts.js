@@ -174,12 +174,15 @@ convertButton.addEventListener("click", function convertValues() {
        
        const dolarToday = 5.10 //Defini o valor do Dólar
        const euroToday = 5.90  // Defini o valor do Euro
+       const libraToday = 6.84 // Defini o valor da Libra
+
        const convertedValue = inputCurrencyValue / dolarToday //Dividido Real pelo Dólar 
        const convertedValueEUR = inputCurrencyValue / euroToday // Dividido Real pelo Euro
+       const convertedValueLibra = inputCurrencyValue / libraToday
 
        // Se escolher o Dolar
        if(currencySelect.value == "dolar"){
-            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US" , {
             style: "currency",
             currency: "USD"
             }).format(convertedValue)
@@ -191,6 +194,13 @@ convertButton.addEventListener("click", function convertValues() {
             style: "currency",
             currency: "EUR"
             }).format(convertedValueEUR)
+         }
+
+       if(currencySelect.value == "libra"){
+            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-GB", {
+            style: "currency",
+            currency: "GBP"
+            }).format(convertedValueLibra)
          }
 
        //Estrutura new Intl: 
@@ -225,6 +235,11 @@ convertButton.addEventListener("click", function convertValues() {
         if(currencySelect.value == "euro") {
          currencyName.innerHTML = "Euro"
          currencyImage.src = "./assets/euro.png"
+        }
+
+        if(currencySelect.value == "libra") {
+         currencyName.innerHTML = "Libra"
+         currencyImage.src = "./assets/libra.png"
         }
         convertValues()
       })
