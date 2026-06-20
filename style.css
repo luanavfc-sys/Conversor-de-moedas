@@ -1,0 +1,138 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+}
+
+.logo-image{
+    width:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+body {
+    background: rgba(138, 81, 252, 1);
+}
+
+main {
+    width: 375px;
+    background:  #F4F4F4;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 44px 24px 23px;
+    margin-bottom: 40px;
+}
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select, input {
+    background: #ffffff;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+}
+
+button {
+    background:#772FD3;
+    border-radius: 5px;
+    width:100%;
+    border: none;
+    height: 48px;
+    color:#ffffff;
+    font-size:  18px;
+    font-weight: 700;
+    cursor:pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+ 
+section {
+    border:1px solid #772FD3;
+    border-radius:20px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    padding: 12px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+}
+
+.currency-box {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:70px;
+    width:70px;
+    gap: 4px;
+   
+}
+
+.arrow-img {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    gap: 4px;
+}
+
+.valor-dolar{
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+.currency{
+    color:#777777;
+    font-weight: 14px;
+
+}
+ .currency-value-to-convert {
+    color:#555555;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    display:inline-block;
+    width: 100%;
+}
+
+.currency-img , .currency-img2 {
+    height:70px;
+    width:70px;
+    gap: 4px;
+}
+
+.currency-value {
+     color:#555555;
+     font-weight: 700;
+     font-size: 18px;
+     text-align: center;
+     display:inline-block;
+     width: 100%;
+     white-space: nowrap;
+}
